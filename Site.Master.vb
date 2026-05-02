@@ -8,6 +8,7 @@ Partial Class Site
         If Session("Role") IsNot Nothing Then
             Dim role As String = Session("Role").ToString()
             lnkLogout.Visible = True
+            phNavbar.Visible = True
 
             If role = "SurveyBuilder" Then
                 phBuilderLinks.Visible = True
